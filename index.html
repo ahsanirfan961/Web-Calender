@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <button id="month-btn" class="btn">October</button>
+            <button id="year-btn" class="btn">2024</button>
+        </div>
+        <div>
+            <button id="prev-btn" class="btn"><</button>
+            <button id="next-btn" class="btn">></button>
+            <button id="ctype-btn" class="btn">Month</button>
+        </div>
+    </header>
+    <div class="modal-canvas" id="modal-canvas">
+        <div class="modal">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p>Add Event</p>
+                <span onclick="closeModal()">&times;</span>
+            </div>
+            <form action="" id="event-form">
+                <label for="event">Event:</label>
+                <input type="text" id="event" name="event" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+    <section id="cal">
+        <div class="cal-head">
+            <h3>Sunday</h3>
+            <h3>Monday</h3>
+            <h3>Tuesday</h3>
+            <h3>Wednesday</h3>
+            <h3>Thursday</h3>
+            <h3>Friday</h3>
+            <h3>Saturday</h3>
+        </div>
+        <div class="cal-body">
+            <div class="cal-entry">-</div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
